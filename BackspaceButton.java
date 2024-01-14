@@ -1,9 +1,12 @@
-import javax.swing.JButton;
+import javax.swing.*;
 
-public class BackspaceButton extends JButton implements Operator {
+class BackspaceButton extends JButton implements Operator {
     public BackspaceButton() {
+        super("\u2190");
+    }
 
+    @Override
+    public void performOperation(CalculatorLogic calculatorLogic) {
+        calculatorLogic.inputBackspace();
     }
 }
-
-

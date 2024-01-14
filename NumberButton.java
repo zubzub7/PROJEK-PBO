@@ -7,6 +7,6 @@ class NumberButton extends JButton implements Operator {
 
     @Override
     public void performOperation(CalculatorLogic calculatorLogic) {
-        calculatorLogic.inputDigit(Integer.parseInt(getText()));
+        calculatorLogic.inputDigit(getText());
     }
 }
